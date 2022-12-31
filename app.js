@@ -1,8 +1,8 @@
 "use strict"
 const express = require('express');
 const app = express();
-require('dotenv').config();
 require('./db/connect');
+require('dotenv').config();
 const PORT = process.env.PORT||3000;
 const tasks = require('./public/routes/tasks');
 const mongoose = require('mongoose');
