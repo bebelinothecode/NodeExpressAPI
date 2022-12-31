@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 //middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('./public'));       
+// app.use(express.static('./public'));       
 
 app.use('/api/v1/tasks',tasks);
 
